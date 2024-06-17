@@ -46,7 +46,7 @@ namespace WebAPITest
                     ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
                 }, ArrayPool<char>.Shared));
             });
-
+            //Add swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "NBP API Client" });
